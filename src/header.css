@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    padding:27px 20px;
+    justify-content: space-between;
+}
+header .logo img{
+    width:200px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    fill:var(--color-white);
+}

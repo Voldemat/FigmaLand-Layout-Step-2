@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Accent-Graphic";
+    src: url("fonts/accentGraphic/accentgraphicmedium-webfont.woff") format("woff");
+    src: url("fonts/accentGraphic/accentgraphicmedium-webfont.woff2") format("woff2");
+}
+:root{
+    --color-blue:#252B42;
+    --color-cyan:#2091F9;
+    --color-grey:#374754;
+    --color-white:#fff;
+
+    --font-size-heading:clamp(2.5em, calc(2.9em + 3vw), 123px);
+    --font-size-second:clamp(1.5em, calc(1.5em + 1vw), 48px);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 500;
+}
+svg.inherit-fill path{
+    fill:inherit;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-white);
+    font-family: 'Accent-Graphic', sans-serif;
+}
+main{
+    flex:auto;
+}
+
+section{
+    text-align: center;
+    padding: 100px 12.5vw;
+    --button-top:15px;
+    --h3-color:var(--color-grey);
+}
+
+section h1{
+    font-size:var(--font-size-heading);
+    color:inherit;
+    margin-bottom: 20px;
+}
+section h3{
+    color:var(--h3-color);
+    font-size:var(--font-size-second);
+}
+section h4{
+    color:var(--color-grey);
+    font-size:clamp(20px, 3vw, 100px);
+    margin-bottom: 7px;
+}
+section h1::first-letter,
+section h3::first-letter,
+section h4::first-letter{
+    text-transform: capitalize;
+}
+
+.blue-button{
+    display: inline-block;
+    --button-top:inherit;
+    margin-top:var(--button-top);
+    padding:16px 64px;
+
+    color:var(--color-white);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: calc(20px + 0.5vw);
+    background-color: var(--color-cyan);
+    border-radius: 35px;
+
+    border:none;
+    box-shadow: none;
+}
+.content-more-width{
+    position: relative;
+    width:120%;
+    right:10%;
+}
+
+
+
+.image{
+    position: absolute;
+    width:100%;
+    height:900px;
+    text-align: center;
+    z-index: -1;
+    background-position: center top;
+}
+.image div{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    background:url("/assets/header-image.png") #222B32;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 calc(95% - 10vw), 0 0, 100% 0, 100% calc(95% - 10vw), 50% 100%);
+}
