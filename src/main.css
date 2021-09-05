@@ -4,6 +4,7 @@
     max-height:900px;
     margin-bottom: clamp(180px, calc(550px - 50vh), 260px);
 
+    --h3-color:var(--color-white);
     --button-top:50px;
 }
 
