@@ -35,7 +35,7 @@
     padding:0 55px;
     font-size:clamp(20px, 3vw, 100px);
 }
-.features .card p{
+.features .card .grey-p{
     text-align: center;
     color:var(--color-grey);
     padding:0 43px;
@@ -57,18 +57,228 @@
 .newsletter img{
     margin-top: 60px;
 }
+
+.newsletter .subscribe-form h5{
+    color:var(--color-blue);
+    font-size:1.3em;
+    margin-top: 30px;
+    margin-bottom:10px;
+}
+.newsletter .subscribe-form h4{
+    font-size:17px;
+}
+.newsletter .subscribe-form form{
+    margin-top: 34px;
+}
+.newsletter .subscribe-form form *{
+    width:100%;
+}
+.newsletter .subscribe-form form input[name="email"]{
+    border-radius: 40px;
+    border:1px solid #E8E8E8;
+    background-color: #F4F4F4;
+    padding:19px 35px;
+    color:#18171D;
+    font-size:14px;
+}
+.newsletter .subscribe-form form input[name="email"]::placeholder{
+    color:inherit;
+    font-size: inherit;
+}
+
 .newsletter .subscribe-form .blue-button{
     display: block;
 }
 
-.contact-us{
-    color:var(--color-blue);
-}
-.pricing{
-    color:var(--color-white);
-    background-color: var(--color-blue);
+.partners{
+    --button-top:50px;
 }
 
+.partners .wrapper{
+    margin-top:80px;
+}
+.partners .wrapper .card{
+    margin-bottom: 30px;
+    border: 1px solid #D8D8D8;
+    padding:40px 25px;
+}
+.partners .wrapper .card p{
+    margin-bottom: 15px;
+    color:var(--color-grey);
+}
+
+.testimonials{
+    --button-top:80px
+}
+.testimonials .wrapper > img{
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
+
+.testimonials .wrapper p{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color:var(--color-grey);
+}
+.testimonials .wrapper .author{
+    margin-top: 45px;
+    display: flex;
+    padding:0 20%;
+
+}
+.testimonials .wrapper .author .text-box{
+    margin-left: 10px;
+}
+.testimonials .wrapper .author .text-box h5{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size:10px;
+}
+.testimonials > .blue-button{
+    padding:16px 47px;
+}
+
+
+.pricing{
+    color:var(--color-white);
+    --h3-color:var(--color-white);
+    background-color: var(--color-blue);
+    padding:100px 10vw;
+}
+.pricing .wrapper{
+    margin-top: 100px;
+}
+.pricing .card{
+    color:var(--color-blue);
+    --h3-color:var(--color-blue);
+    
+    border-radius:5px;
+    padding:40px;
+    display: inline-block;
+    max-width:380px;
+    
+    background-color: white;
+    border: 1px solid #DEDEDE;
+    margin: 0 2vw 50px 2vw;
+
+}
+.pricing .card .blue-button{
+    padding: 16px 40px;
+    white-space: nowrap;
+}
+.pricing .card .price{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height:100px;
+    margin-bottom: 40px;
+}
+.pricing .card .price .number{
+    font-size:74px;
+}
+.pricing .card .price .info{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+    margin-left:10px;
+}
+.pricing .card .price .currency{
+    text-align: start;
+    font-size: 20px;
+}
+.pricing .card .price .period{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+
+.pricing .card .features-box .item{
+    text-transform: capitalize;
+    margin-bottom:20px;    
+}
+
+
+.pricing .card h3{
+    text-transform: uppercase;
+    font-size:clamp(18px, 1.2em, 22px);
+    margin-bottom: 3px;
+}
+
+.pricing .card.blue{
+    background-color: var(--color-cyan);
+    color:var(--color-white);
+    --h3-color:var(--color-white);
+}
+.pricing .card.blue .blue-button{
+    background-color: #fff;
+    color:var(--color-cyan);
+}
+
+
+.contacts .social-media{
+    text-align:center;
+    margin: 66px 10%;
+    fill:var(--color-cyan);
+    width:80%;
+    white-space: nowrap;
+}
+.contacts .social-media svg{
+    margin:0 14px;
+    width:32px;
+    flex:1;
+}
+.contacts .wrapper .item{
+    display: flex;
+    min-height: 66px;
+    fill:var(--color-cyan);
+}
+.contacts .wrapper .item svg{
+    min-width:25px;
+    margin:10px 20px 10px 0;
+}
+.contacts .wrapper .item > div{
+    flex: auto;
+    text-align:start;
+    font-size:16px;
+}
+.contact-form{
+    border:1px solid #DDDDDD;
+    border-radius: 20px;
+    padding: 52px 49px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    max-width:670px;
+}
+.contact-form form{
+    text-align: start;
+}
+.contact-form form input:not(.blue-button),
+.contact-form form textarea{
+    background-color: #F5F5F5;
+    border:1px solid #E8E8E8;
+    color:#18171D;
+    padding:20px 20px;
+    margin-bottom: 25px;
+    font-family: 'Roboto';
+    width:100%;
+}
+.contact-form form input:not(.blue-button){
+    border-radius: 10vw;
+}
+.contact-form .blue-button{
+    min-width: 100px;
+    width:50%;
+    padding:18px 0;
+    text-align: center;
+}
+.contact-form form
+.contact-form form *::placeholder{
+    color:#18171D;
+}
+.contact-form h3{
+    font-size:20px;
+    margin-bottom: 45px;
+}
 footer{
     margin-top: 100vh;
 
