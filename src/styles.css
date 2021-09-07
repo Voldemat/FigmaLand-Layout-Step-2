@@ -81,7 +81,9 @@ section h3::first-letter,
 section h4::first-letter{
     text-transform: capitalize;
 }
-
+input{
+    -webkit-appearance: none;
+}
 .blue-button{
     display: inline-block;
     --button-top:inherit;
@@ -97,6 +99,7 @@ section h4::first-letter{
 
     border:none;
     box-shadow: none;
+    -webkit-appearance: none;
 }
 .content-more-width{
     position: relative;
