@@ -18,28 +18,38 @@
     border-radius: 5vw;
     box-shadow: rgba(158, 156, 172, 0.15) 0px 48px 100px 0px;
 }
-.features .wrapper{
-
-}
-.features .card{
+.features .swap-box{
     display: flex;
     flex-direction: column;
+}
+@media screen and (min-width:1100px){
+    .features .swap-box{
+        flex-direction: column-reverse;
+    }
+}
+.features .wrapper{
+    margin-top: 80px;
+}
+.features .card{
+    display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    margin-top:clamp(55px, 15vw, 300px);
+    padding: 0 17px;
+    max-width:270px;
 }
 .features .card svg{
     margin-bottom: 17px;
-    width:clamp(47px, 10vw, 150px);
+    width:47px;
 }
 .features .card h1{
     padding:0 55px;
-    font-size:clamp(20px, 3vw, 100px);
+    font-size:20px;
 }
 .features .card .grey-p{
     text-align: center;
     color:var(--color-grey);
     padding:0 43px;
-    font-size:clamp(18px, 2.5vw, 80px);
+    font-size:18px;
 
 }
 
