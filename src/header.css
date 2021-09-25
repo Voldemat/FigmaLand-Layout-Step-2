@@ -1,15 +1,24 @@
+
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding:27px 10vw;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header nav,
 header .social-media{
     display: none;
     white-space: nowrap;
     width:auto;
-    flex:1;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
 }
 header nav a{
     color:var(--color-white);
@@ -26,8 +35,12 @@ header .logo img{
     width:200px;
 }
 .menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     fill:var(--color-white);
     width:10vw;
     max-width:50px;
@@ -37,10 +50,14 @@ header .logo img{
 
 @media screen and (min-width:1100px){
     header{
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     header .logo{
-        flex:auto;
+        -webkit-box-flex:1;
+            -ms-flex:auto;
+                flex:auto;
         text-align: center;
     }
     header nav,
