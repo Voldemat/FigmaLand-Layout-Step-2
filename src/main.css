@@ -56,12 +56,17 @@
 .organize{
     --h3-color:var(--color-grey);
     --button-top:60px;
+    text-align:center;
 }
 .organize > a{
     color:var(--color-white);
 }
 .organize img{
+    display: block;
+    background-position: center center;
+    text-align: center;
     margin-top: 65px;
+    max-width: 500px;
 }
 
 .newsletter img{
