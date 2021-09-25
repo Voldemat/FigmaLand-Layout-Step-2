@@ -63,6 +63,9 @@
 }
 .organize img{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
     background-position: center center;
     text-align: center;
     margin-top: 65px;
@@ -71,17 +74,21 @@
 
 .newsletter img{
     margin-top: 60px;
-    max-width:855px;
+    max-width:600px;
+    width:100%;
 }
-
+.newsletter .subscribe-form{
+    text-align: center;
+}
 .newsletter .subscribe-form h5{
+    font-size: clamp(1.3em, 3vw, 3vw) !important;
     color:var(--color-blue);
     font-size:1.3em;
     margin-top: 30px;
     margin-bottom:10px;
 }
 .newsletter .subscribe-form h4{
-    font-size:17px;
+    font-size: clamp(14px, 1.5vw, 1.5vw);
 }
 .newsletter .subscribe-form form{
     margin-top: 34px;
@@ -90,12 +97,13 @@
     width:100%;
 }
 .newsletter .subscribe-form form input[name="email"]{
+    max-width: 700px;
     border-radius: 40px;
     border:1px solid #E8E8E8;
     background-color: #F4F4F4;
     padding:19px 35px;
     color:#18171D;
-    font-size:14px;
+    font-size: clamp(14px, 1.5em, 1.5em);
 }
 .newsletter .subscribe-form form input[name="email"]::placeholder{
     color:inherit;
@@ -104,6 +112,10 @@
 
 .newsletter .subscribe-form .blue-button{
     display: block;
+    text-align: center;
+    max-width: 700px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .partners{
@@ -111,9 +123,14 @@
 }
 
 .partners .wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top:80px;
+
 }
 .partners .wrapper .card{
+    max-width: 500px;
     margin-bottom: 30px;
     border: 1px solid #D8D8D8;
     padding:40px 25px;
@@ -129,18 +146,32 @@
 .testimonials .wrapper > img{
     margin-top: 95px;
     margin-bottom: 50px;
+    min-width: 200px;
+    width:10vw;
 }
 
 .testimonials .wrapper p{
     font-family: 'Roboto';
     font-weight: bold;
     color:var(--color-grey);
+    font-size: clamp(16px, 1.5em, 1.5em);
 }
+
 .testimonials .wrapper .author{
     margin-top: 45px;
     display: flex;
+    justify-content: center;
     padding:0 20%;
 
+}
+.testimonials .wrapper .grey-p{
+    font-size: clamp(14px, 1.3vw, 33px);
+}
+.testimonials .wrapper .author .avatar{
+    width: 5vw;
+    height:5vw;
+    min-height: 70px;
+    min-width: 70px;
 }
 .testimonials .wrapper .author .text-box{
     margin-left: 10px;
@@ -148,7 +179,7 @@
 .testimonials .wrapper .author .text-box h5{
     font-family: 'Roboto';
     font-weight: bold;
-    font-size:10px;
+    font-size:clamp(10px, 1vw, 25px);
 }
 .testimonials > .blue-button{
     padding:16px 47px;

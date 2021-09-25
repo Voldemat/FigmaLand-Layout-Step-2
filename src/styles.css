@@ -107,7 +107,13 @@ input{
     right:10%;
 }
 
-
+.social-media.animate-blue svg{
+    fill:var(--color-white);
+    transition: all 0.5s ease;
+}
+.social-media.animate-blue svg:hover{
+    fill:var(--color-cyan);
+}
 
 .image{
     position: absolute;
